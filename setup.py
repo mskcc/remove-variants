@@ -11,7 +11,7 @@ with open('LICENSE') as f:
 
 setup(
     name='remove_variants',
-    version='0.1.4',
+    version='0.1.1',
     description='Package for removing simple SNVs/INDELs where complex variants are called',
     long_description=readme,
     author='Ronak Shah',
