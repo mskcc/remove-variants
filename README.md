@@ -1,2 +1,2 @@
-# mergevariants
-This repo helps to merge SNV's and INDEL's from different variant caller's
+# remove_variants
+This repo helps to remove simple SNV's and INDEL's from maf
