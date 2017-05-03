@@ -14,7 +14,7 @@ This repo helps to remove simple SNV's and INDEL's called by muTect and SomaticI
 
 ```
 python remove_variants.py --help
-usage: filter_mutect.py [options]
+usage: remove_variants.py [options]
 
 Remove snps/indels from the output maf where a complex variant is called
 

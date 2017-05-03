@@ -31,7 +31,7 @@ except ImportError:
     sys.exit(1)
 
 def main():
-   parser = argparse.ArgumentParser(prog='filter_mutect.py', description='Remove snps/indels from the output maf where a complex variant is called', usage='%(prog)s [options]')
+   parser = argparse.ArgumentParser(prog='remove_variants.py', description='Remove snps/indels from the output maf where a complex variant is called', usage='%(prog)s [options]')
    parser.add_argument("-v", "--verbose", action="store_true", dest="verbose", help="make lots of noise")
    parser.add_argument("-imaf", "--input-maf", action="store", dest="inputMaf", required=True, type=str, metavar='SomeID.maf', help="Input maf file which needs to be fixed")
    parser.add_argument("-omaf","--output-maf",action="store", dest="outputMaf", required=True, type=str, metavar='SomeID.maf', help="Output maf file name")
