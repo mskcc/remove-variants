@@ -5,8 +5,8 @@ This repo helps to remove simple SNV's and INDEL's called by muTect and SomaticI
 - pandas : [v0.16.2](http://pandas.pydata.org/)
 - nose : [v1.3.7](http://nose.readthedocs.io/en/latest/)
 
-[![Build Status](https://travis-ci.org/rhshah/remov_variants.svg?branch=master)](https://travis-ci.org/rhshah/remove_variatns)
-[![codecov](https://codecov.io/gh/rhshah/remove_variatns/branch/master/graph/badge.svg)](https://codecov.io/gh/rhshah/remove_variatns)
+[![Build Status](https://travis-ci.org/rhshah/remov_variants.svg?branch=master)](https://travis-ci.org/rhshah/remove_variants)
+[![codecov](https://codecov.io/gh/rhshah/remove_variants/branch/master/graph/badge.svg)](https://codecov.io/gh/rhshah/remove_variants)
 
 ## remove_variants.py
 #### Based on Mutation Annotation Format ([MAF](https://wiki.nci.nih.gov/display/TCGA/Mutation+Annotation+Format+%28MAF%29+Specification))
