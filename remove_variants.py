@@ -1,4 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/env python
+
 '''
 @Description : Given a MAF, consolidate events that overlap, and remove Intron/IGR events
 @Created :  05/02/2017
