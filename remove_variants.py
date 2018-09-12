@@ -79,6 +79,7 @@ def remove_variants(positions_to_check,all_variants_df):
                 flag = True
                 drop_index.append(i_index)
     all_variants_df_copy2 = all_variants_df_copy.drop(all_variants_df_copy.index[drop_index])
+    all_variants_df_copy2 = all_variants_df_copy2.sort(['Chromosome', 'Start_Position'])
     return(all_variants_df_copy2)
 
 def write_output(args,output_DF):
