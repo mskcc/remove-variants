@@ -1,6 +1,6 @@
 #!/usr/bin/python
 '''
-@Description : Given a MAF, consolidate events that overlap, and remove Intron/IGR events
+@Description : Given a MAF, consolidate events that overlap, and remove IGR events
 @Created :  05/02/2017
 @Updated : 09/12/2018
 @author : Ronak H Shah
@@ -23,7 +23,7 @@ except ImportError:
     sys.exit(1)
 
 def main():
-   parser = argparse.ArgumentParser(prog='remove_variants.py', description='Consolidate events that overlap, and remove Intron/IGR events', usage='%(prog)s [options]')
+   parser = argparse.ArgumentParser(prog='remove_variants.py', description='Consolidate events that overlap, and remove IGR events', usage='%(prog)s [options]')
    parser.add_argument("-v", "--verbose", action="store_true", dest="verbose", help="make lots of noise")
    parser.add_argument("-imaf", "--input-maf", action="store", dest="inputMaf", required=True, type=str, metavar='SomeID.maf', help="Input maf file which needs to be fixed")
    parser.add_argument("-omaf","--output-maf",action="store", dest="outputMaf", required=True, type=str, metavar='SomeID.maf', help="Output maf file name")
@@ -70,7 +70,7 @@ def remove_variants(positions_to_check,all_variants_df):
                 flag = True
                 drop_index.append(i_index)
     muts.drop(muts.index[drop_index], inplace=True)
-    muts.drop(muts[(muts.Variant_Classification == "Intron") | (muts.Variant_Classification == "IGR")].index, inplace=True)
+    muts.drop(muts[muts.Variant_Classification == "IGR"].index, inplace=True)
     return(muts)
 
 def write_output(args,output_DF):
